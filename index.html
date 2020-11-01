@@ -24,10 +24,12 @@
         </div>
       </div>
         <div class="fullscreen-bg">
-            <video loop autoplay muted controls playsinline preload="auto" class="fullscreen-bg__video" id="video">
+            <video loop autoplay muted controls playsinline 
+            class="fullscreen-bg__video" id="video">
                 <source src="KATEBUTCH as PARISSOCIAL.mp4" type="video/mp4">
             </video>
         </div>
+        <!-- preload="auto" -->
     </body>
 <style>
   @font-face {
@@ -136,6 +138,7 @@ var vid = document.getElementById("video");
 var titleBackground = document.getElementById("title-background");
 var linkBackground = document.getElementById("link-background");
 var links = document.getElementById("links");
+vid.play();
 title.onclick = function(){
   vid.play()
   title.style.opacity = 0;
