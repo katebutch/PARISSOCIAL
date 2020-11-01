@@ -23,7 +23,7 @@
         </div>
       </div>
         <div class="fullscreen-bg">
-            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video" id="video">
                 <source src="KATEBUTCH as PARISSOCIAL.mp4" type="video/webm">
             </video>
         </div>
@@ -130,6 +130,10 @@
 </style>
 <script>
 var title = document.getElementById("title");
+var video = document.getElementById("video");
+window.onload = function(){
+    video.play();
+  }
 var titleBackground = document.getElementById("title-background");
 var linkBackground = document.getElementById("link-background");
 var links = document.getElementById("links");
