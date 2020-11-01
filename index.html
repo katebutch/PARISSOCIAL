@@ -144,11 +144,6 @@ title.onclick = function(){
   linkBackground.style.opacity = 1;
   links.style.visibility = 'visible';
 }
-// video.onloadstart = function () {
-//   video.play();
-// }
-video.addEventListener('click', function () {
-  video.play();
-})
+video.addEventListener('click',function(){ video.play(); },false);
 </script>
 </html>
