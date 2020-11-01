@@ -131,9 +131,9 @@
 <script>
 var title = document.getElementById("title");
 var video = document.getElementById("video");
-window.onload = function(){
-    video.play();
-  }
+// window.onload = function(){
+//     video.play();
+//   }
 var titleBackground = document.getElementById("title-background");
 var linkBackground = document.getElementById("link-background");
 var links = document.getElementById("links");
@@ -143,6 +143,9 @@ title.onclick = function(){
   links.style.opacity = 1;
   linkBackground.style.opacity = 1;
   links.style.visibility = 'visible';
+}
+video.onloadstart = function () {
+  video.play();
 }
 </script>
 </html>
