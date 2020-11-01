@@ -132,7 +132,6 @@
 <script>
 var title = document.getElementById("title");
 var vid = document.getElementById("video");
-var vid1 = document.querySelector("video");
 var titleBackground = document.getElementById("title-background");
 var linkBackground = document.getElementById("link-background");
 var links = document.getElementById("links");
@@ -147,7 +146,7 @@ title.onclick = function(){
 vid.addEventListener('loadeddata', showVideo, false);
 function showVideo(e) {
   vid.play();
-  console.log("played")
+  console.log("updated")
 }
 </script>
 </html>
