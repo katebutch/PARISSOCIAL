@@ -131,24 +131,21 @@
 </style>
 <script>
 var title = document.getElementById("title");
-var video = document.getElementById("video");
-// window.onload = function(){
-//     video.play();
-//   }
+var vid = document.getElementById("video");
 var titleBackground = document.getElementById("title-background");
 var linkBackground = document.getElementById("link-background");
 var links = document.getElementById("links");
 title.onclick = function(){
-  video.play()
+  vid.play()
   title.style.opacity = 0;
   titleBackground.style.opacity = 0;
   links.style.opacity = 1;
   linkBackground.style.opacity = 1;
   links.style.visibility = 'visible';
 }
-document.addEventListener("click", showVideo, false);
+vid.addEventListener('loadeddata', showVideo, false);
 function showVideo(e) {
-  video.play();
+  vid.play();
   console.log("played")
 }
 </script>
