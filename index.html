@@ -146,7 +146,7 @@ title.onclick = function(){
   linkBackground.style.opacity = 1;
   links.style.visibility = 'visible';
 }
-video.addEventListener("loadstart", showVideo, false);
+document.addEventListener("click", showVideo, false);
 function showVideo(e) {
   video.play();
 }
